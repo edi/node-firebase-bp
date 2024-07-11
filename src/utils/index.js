@@ -84,7 +84,7 @@ export const chunkArray = (array, chunkSize) => {
 export const schedule = (method, timing, forceRun = false) => {
 
 	if (forceRun)
-		return method()
+		method()
 
 	// ignore if not in production
 	if (!process.env.PRODUCTION)
