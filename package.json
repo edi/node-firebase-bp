@@ -1,0 +1,32 @@
+{
+  "name": "node-boilerplate",
+  "version": "1.0.0",
+  "description": "Node Boilerplate",
+  "main": "server.js",
+  "author": "Edi Duluman",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon -q server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fast-printf": "^1.6.9",
+    "firebase-admin": "^12.2.0",
+    "glob": "^11.0.0",
+    "hbs": "^4.2.0",
+    "node-schedule": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "imports": {
+    "#app/*": "./src/app/*",
+    "#jobs/*": "./src/jobs/*",
+    "#utils/*": "./src/utils/*",
+    "#config/*": "./src/config/*",
+    "#middleware/*": "./src/middleware/*"
+  }
+}
